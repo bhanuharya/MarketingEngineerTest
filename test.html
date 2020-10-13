@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+  box-sizing: border-box;
+  
+  
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+   padding-top: 10px;
+  padding-right: 6px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+
+/* Style the counter cards */
+.card {
+  
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  
+  border: 6px solid black;
+  display: felx;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (min-width: 1280px) {
+  .column {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .column {
+    width: 16%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+  .div1 {
+    width: 30px;
+    height: 60px;
+    background-color: #7FFF00;
+    border: 6px solid black;
+    box-sizing: border-box;
+  }
+  
+  .div2 {
+    width: 30px;
+    height: 60px; 
+   
+    border: 6px solid black;
+    box-sizing: border-box;
+  }
+  .div3 {
+    width: 30px;
+    height: 60px; 
+    background-color: #7FFF00;
+    border: 6px solid black;
+    box-sizing: border-box;
+  }
+  .div4 {
+    width: 30px;
+    height: 60px;  
+
+    border: 6px solid black;
+    box-sizing: border-box;
+  }
+  </style>
+
+</head>
+<h1>Ramadhana Bhanuharya Wishnumurti</h1>
+<h1>Marketing Engineer Intern Test</h1>
+<body>
+
+<h2>No. 7</h2>
+<p id="iterate">strawberry,banana,apple,grape,melon</p>
+
+<button type="button" onclick="myFunction()">click to Iterate ascending</button>
+
+<script>
+var fruits = ["banana", "apple", "grape", "melon", "strawberry"];
+fruits.sort();
+function myFunction() {
+  document.getElementById("iterate").innerHTML = fruits;
+}
+</script>
+
+<h2>No. 8</h2>
+
+<div class="div1"></div>
+<br>
+<div class="div2"></div>
+<br>
+<div class="div3"></div>
+<br>
+<div class="div4"></div>
+
+
+<h2>No. 9</h2>
+<table>
+  <tr>
+    <th>Brand</th>
+    <th>Type</th>
+    <th>Harga</th>
+  </tr>
+  <tr>
+    <td>Samsung</td>
+    <td>Galaxy Note 20</td>
+    <td>Rp19,999,999</td>
+  </tr>
+  <tr>
+    <td>Apple</td>
+    <td>Iphone 11</td>
+    <td>Rp17,999,999</td>
+  </tr>
+  <tr>
+    <td>LG</td>
+    <td>v50</td>
+    <td>Rp9,999,999</td>
+  </tr>
+  <tr>
+    <td>Oppo</td>
+    <td>Reno 4 Pro</td>
+    <td>Rp10,999,999</td>
+  </tr>
+  <tr>
+    <td>Huawei</td>
+    <td>Mate 7</td>
+    <td>Rp12,999,999</td>
+  </tr>
+  <tr>
+    <td>Xiaomi</td>
+    <td>Redmi 9</td>
+    <td>Rp2,999,999</td>
+  </tr>
+   <tr>
+    <td>Vivo</td>
+    <td>v5</td>
+    <td>Rp2,999,999</td>
+  </tr>
+   <tr>
+    <td>One Plus</td>
+    <td>7 Pro</td>
+    <td>Rp12,999,999</td>
+  </tr>
+   <tr>
+    <td>Apple</td>
+    <td>Iphone XS Max</td>
+    <td>Rp12,999,999</td>
+  </tr>
+   <tr>
+    <td>Samsung</td>
+    <td>Galaxy A51</td>
+    <td>Rp5,999,999</td>
+  </tr>
+</table>
+
+<h2>No. 10</h2>
+
+<h2>Responsive Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <h2>Card 1</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2>Card 2</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <h2>Card 3</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <h2>Card 4</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2>Card 5</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2>Card 6</h2>
+      <p>Some text</p>
+      <span>Some text</span>
+    </div>
+ </div>
+</div>
+</body>
+</html>
+
